@@ -4,7 +4,7 @@ create table if not exists public.recuperacao_depaula_leads (
   nome text not null check (char_length(nome) between 2 and 120),
   empresa text not null check (char_length(empresa) between 2 and 160),
   whatsapp text not null check (char_length(regexp_replace(whatsapp, '[^0-9]', '', 'g')) between 10 and 13),
-  regime_tributario text not null check (regime_tributario in ('Lucro Real', 'Lucro Presumido', 'Simples Nacional', 'Não sei informar')),
+  regime_tributario text not null check (regime_tributario in ('Lucro Real', 'Lucro Presumido')),
   faixa_faturamento text not null check (faixa_faturamento in ('Até R$ 500 mil/mês', 'R$ 500 mil a R$ 1 milhão/mês', 'R$ 1 milhão a R$ 5 milhões/mês', 'Acima de R$ 5 milhões/mês', 'Prefiro informar na conversa')),
   interesse text not null default 'Diagnóstico tributário',
   consentimento boolean not null default true check (consentimento = true),

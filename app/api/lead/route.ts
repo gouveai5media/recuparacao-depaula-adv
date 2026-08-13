@@ -8,7 +8,7 @@ type LeadPayload = {
   website?: unknown;
 };
 
-const regimes = new Set(["Lucro Real", "Lucro Presumido", "Simples Nacional", "Não sei informar"]);
+const regimes = new Set(["Lucro Real", "Lucro Presumido"]);
 const faixas = new Set([
   "Até R$ 500 mil/mês",
   "R$ 500 mil a R$ 1 milhão/mês",

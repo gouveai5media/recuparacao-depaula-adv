@@ -252,11 +252,10 @@ export default function Home() {
 
       <section className="eligibility section-shell">
         <div className="eligibility-panel">
-          <div><div className="eyebrow eyebrow-dark"><i /> Perfil atendido</div><h2>Sua empresa pode ter uma oportunidade fiscal a revisar.</h2></div>
+          <div><div className="eyebrow eyebrow-dark"><i /> Atendimento exclusivo</div><h2>Estratégia tributária para Lucro Real e Presumido.</h2></div>
           <div className="profile-list">
             <div><span>01</span><p><b>Lucro Real</b>Operações com maior volume e complexidade fiscal.</p></div>
             <div><span>02</span><p><b>Lucro Presumido</b>Análises aderentes ao setor e à natureza das receitas.</p></div>
-            <div><span>03</span><p><b>Simples Nacional</b>Casos específicos, avaliados de forma individual.</p></div>
           </div>
           <a href="#diagnostico" className="button button-light">Avaliar o perfil da empresa <span>↗</span></a>
         </div>
@@ -299,7 +298,7 @@ export default function Home() {
             <div className="field-row">
               <label>Regime tributário
                 <select name="regime_tributario" defaultValue="" required>
-                  <option value="" disabled>Selecione</option><option>Lucro Real</option><option>Lucro Presumido</option><option>Simples Nacional</option><option>Não sei informar</option>
+                  <option value="" disabled>Selecione</option><option>Lucro Real</option><option>Lucro Presumido</option>
                 </select>
               </label>
               <label>Faturamento aproximado
